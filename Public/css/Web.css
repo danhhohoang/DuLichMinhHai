@@ -47,7 +47,10 @@ body {
   background-color: #1265f3;
   padding: 5px 10px;
 }
-
+.header{
+    padding-left: 80px;
+}
+/* top-header */
 .top-header {
     background-color: #fef2f2;
     color: #991b1b;
