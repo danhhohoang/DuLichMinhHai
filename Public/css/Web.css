@@ -26,6 +26,7 @@ body {
   padding-top: 5%;
   color: #DC2626;
   font-family: 'Kodchasan', sans-serif;
+  font-weight: bold;
 }
 
 .search-container {
@@ -72,4 +73,35 @@ body {
 }
 .logo {
   padding-left: 80px;
+}
+.advantage_kt {
+  text-align: center;
+  color: #DC2626;
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.advantage_title {
+  text-align: center;
+  color: #DC2626;
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 28px;
+  font-style: normal;
+}
+.advantage_reason{
+  text-align: center;
+  margin-left: 25%;
+  padding-top: 40px;
+  font-size: 14px;
+}
+
+.visao{
+  text-align: center;
+}
+.icon_advantage{
+  border-radius: 50%;
+  background: #1265F3;
+  width: 100px;
+  height: 100px;
+  margin-left: 35%;
 }
