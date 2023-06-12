@@ -47,6 +47,29 @@ body {
   padding: 5px 10px;
 }
 
-#search-results {
-  margin-top: 10px;
+.top-header {
+    background-color: #fef2f2;
+    color: #991b1b;
+    padding-top: 10px;
+    padding-left: 110px;
+    text-transform: uppercase;
+    font-family: 'Kodchasan', sans-serif;
+}
+.gmail, .address{
+    position: relative;
+}
+.gmail > p::after,
+.gmail > p::before,
+.address > p::after,
+.address > p::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 27px;
+    background-color: #991b1b;
+    top: 0px;
+    right: -3px;
+}
+.logo {
+  padding-left: 80px;
 }
