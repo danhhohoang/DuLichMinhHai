@@ -1,5 +1,5 @@
-
-header {
+/* .top-header */
+.top-header {
     background-color: #fef2f2;
     color: #991b1b;
     padding-top: 10px;
@@ -20,4 +20,12 @@ header {
     background-color: #991b1b;
     top: 0px;
     right: -3px;
+}
+/* end .top-header */
+
+/* banner */
+.banner {
+    background-image: url(../images/banner.png);
+    height: 100vh;
+    background-size: cover;
 }
