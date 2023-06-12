@@ -1,10 +1,62 @@
-/* .top-header */
+* {box-sizing: border-box;}
+@font-face {
+    font-family: 'Kodchasan';
+    src: url('path/to/kodchasan.woff2') format('woff2'),
+         url('path/to/kodchasan.woff') format('woff');
+    /* Các định dạng tệp font chữ khác (nếu có) có thể được thêm vào đây */
+  }
+body {
+  margin: 0;
+  font-family: 'Kodchasan', Arial, Helvetica, sans-serif;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.search-container {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.company_name{
+  /* position: absolute; */
+  padding-top: 5%;
+  color: #DC2626;
+  font-family: 'Kodchasan', sans-serif;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+#search-input {
+  background-color: #eef7ff;
+  border: none;
+  padding: 5px;
+  width: 200px;
+}
+
+#search-button {
+  border: none;
+  color: #fff;
+  background-color: #1265f3;
+  padding: 5px 10px;
+}
+.header{
+    padding-left: 80px;
+}
+/* top-header */
 .top-header {
     background-color: #fef2f2;
     color: #991b1b;
     padding-top: 10px;
     padding-left: 110px;
     text-transform: uppercase;
+    font-family: 'Kodchasan', sans-serif;
 }
 .gmail, .address{
     position: relative;
@@ -21,11 +73,12 @@
     top: 0px;
     right: -3px;
 }
-/* end .top-header */
-
+/* end top-header */
 /* banner */
 .banner {
     background-image: url(../images/banner.png);
-    height: 100vh;
+    height: 85vh;
     background-size: cover;
 }
+/* banner */
+.nav-link{color: #FFFFFF !important; font-family: 'Kodchasan', sans-serif;}
