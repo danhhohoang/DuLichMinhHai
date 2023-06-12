@@ -46,7 +46,10 @@ body {
   background-color: #1265f3;
   padding: 5px 10px;
 }
-
+.header{
+    padding-left: 80px;
+}
+/* top-header */
 .top-header {
     background-color: #fef2f2;
     color: #991b1b;
@@ -70,6 +73,12 @@ body {
     top: 0px;
     right: -3px;
 }
-.logo {
-  padding-left: 80px;
+/* end top-header */
+/* banner */
+.banner {
+    background-image: url(../images/banner.png);
+    height: 85vh;
+    background-size: cover;
 }
+/* banner */
+.nav-link{color: #FFFFFF !important; font-family: 'Kodchasan', sans-serif;}
