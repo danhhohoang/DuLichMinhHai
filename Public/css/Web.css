@@ -213,3 +213,23 @@ body {
 .service_button{
   padding-top: 20px;
 }
+.about-us{
+  font-family: 'Kodchasan', sans-serif; 
+}
+.title {
+  font-weight: bold;
+  color: #DC2626;
+}
+.text{
+  padding-bottom: 16px;
+}
+.imageContain {position: relative;}
+.bottom-left{
+bottom: 1px;
+left: 12px;
+position: absolute;
+background-color: #1265F3B2;
+color: #FFFFFF;
+border-radius: 0px 0px 0px 5px;
+
+}
