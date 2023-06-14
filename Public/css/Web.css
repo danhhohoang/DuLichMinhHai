@@ -231,5 +231,164 @@ position: absolute;
 background-color: #1265F3B2;
 color: #FFFFFF;
 border-radius: 0px 0px 0px 5px;
-
+}
+.Vehicle_lines_describe{
+  padding-top: 20px;
+  text-align: center;
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+}
+.Vehicle_lines_title{
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 28px;
+  color: #DC2626;
+}
+.trapezoid {
+  position: absolute;
+  top: 168px;
+  left: 238px;
+  width: 200px;
+  height: 0;
+  border-bottom: 52px solid rgba(153, 27, 27, 0.8); ;
+  margin-left: 50px;
+  clip-path: polygon(0 0, 69% 0, 100% 100%, 0% 100%);
+}
+.container {
+  position: relative;
+}
+.Vehicle_lines_car_title{
+  font-family: 'Kodchasan', sans-serif;
+  color: #FFFFFF;
+  font-size: 13px;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+.Vehicle_lines_button{
+  text-align: center;
+  border-radius: 1px;
+  background: linear-gradient(90deg, #991B1B 0%, #DC2626 50.41%, #991B1B 100%);
+  color: #eef7ff;
+  width: 151px;
+  height: 41px;
+  padding-top: 7px;
+  flex-direction: row;
+  align-items: center;
+}
+.bookingProcess .container{
+  border-radius: 100px; 
+  border-width: 1px;
+  height: 150px; 
+  border-style: solid;
+   border-color: #FFFFFF; 
+   margin-top: 50px; 
+   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+   font-family: 'Kodchasan', sans-serif;
+   margin-bottom: 45px;
+}
+.half-top {
+  padding-top: 35px;
+color: #FFFFFF;
+font-family: 'Kodchasan', sans-serif;
+}
+.text h2{
+  text-transform: uppercase;
+}
+.border-outside{
+  border-width: 1px;
+  border-style: solid; 
+  border-radius: 10px; 
+  border-color: #FFFFFF;
+  width: 705px;
+  height: 122px; 
+  top:10px; 
+  left: 10px;
+  padding: 12px; 
+  position: relative;
+}
+.half-top .background{
+  font-family: 'Kodchasan', sans-serif;
+  text-transform: uppercase;
+}
+.border-inside{
+  background-color: #FFFFFFB2; 
+  width: 680px; 
+  height: 98px; 
+  border-radius: 10px;
+}
+.border-inside p{
+  color: #000000; 
+  top: 21px; 
+  left: 34px; 
+  position: absolute; 
+  font-size: 16px; 
+  font-weight: bold;
+}
+.border-inside h1{
+  bottom:7px; 
+  right:113px; 
+  position: absolute;
+   color: #DC2626; 
+   font-weight: bold;
+}
+.half-bottom{
+  font-family: 'Kodchasan', sans-serif;
+  padding-top: 20px;
+}
+.half-bottom h2{
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.half-bottom .col-5 p {
+  background-color: #FFFFFF; 
+  border-radius: 10px;
+  width: 180px;
+  height: 49px; 
+  padding: 12px 30px; 
+  color:#DC2626; 
+  font-weight: bold; 
+  font-size: 16px;
+  margin-left: 93px; 
+  margin-top: 20px;
+}
+.half-bottom .col-4 p{
+  background-color: #FFFFFF; 
+  border-radius: 10px;
+  width: 255px;
+  height: 49px; 
+  padding: 12px 30px; 
+  color: #DC2626;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 45px; 
+  margin-top: 20px;
+}
+.half-bottom .col-3 p{
+  background-color: #FFFFFF; 
+  border-radius: 10px;
+  width: 253px;
+  height: 49px; 
+  padding: 12px 30px; 
+  color: #DC2626;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 5px; 
+  margin-top: 20px;
+}
+.Evaluate_title{
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Kodchasan', sans-serif;
+  padding-left: 290px;
+}
+.Evaluate_description{
+  padding-top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Kodchasan', sans-serif;
+  padding-left: 290px;
+  color: #DC2626;
 }
