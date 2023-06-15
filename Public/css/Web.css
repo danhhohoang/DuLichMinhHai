@@ -598,3 +598,21 @@ input[type=learn_about_button] {
   right: 0px;
   font-weight: bold;
 }
+
+.image{
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  position: relative;
+}
+
+.image img{
+  width: 100%;
+  transform: scale(1);
+  transition: all 0.5s;
+}
+
+.image:hover img{
+  transform: scale(1.2);
+}
