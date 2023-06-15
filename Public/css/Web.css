@@ -1,10 +1,14 @@
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
 @font-face {
-    font-family: 'Kodchasan';
-    src: url('path/to/kodchasan.woff2') format('woff2'),
-         url('path/to/kodchasan.woff') format('woff');
-    /* Các định dạng tệp font chữ khác (nếu có) có thể được thêm vào đây */
-  }
+  font-family: 'Kodchasan';
+  src: url('path/to/kodchasan.woff2') format('woff2'),
+    url('path/to/kodchasan.woff') format('woff');
+  /* Các định dạng tệp font chữ khác (nếu có) có thể được thêm vào đây */
+}
+
 body {
   margin: 0;
   font-family: 'Kodchasan', Arial, Helvetica, sans-serif;
@@ -21,7 +25,8 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.company_name{
+
+.company_name {
   /* position: absolute; */
   padding-top: 5%;
   color: #DC2626;
@@ -46,42 +51,53 @@ body {
   background-color: #1265f3;
   padding: 5px 10px;
 }
-.header{
-    padding-left: 80px;
+
+.header {
+  padding-left: 80px;
 }
+
 /* top-header */
 .top-header {
-    background-color: #fef2f2;
-    color: #991b1b;
-    padding-top: 10px;
-    padding-left: 110px;
-    text-transform: uppercase;
-    font-family: 'Kodchasan', sans-serif;
+  background-color: #fef2f2;
+  color: #991b1b;
+  padding-top: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: 'Kodchasan', sans-serif;
 }
-.gmail, .address{
-    position: relative;
+
+.gmail,
+.address {
+  position: relative;
 }
-.gmail > p::after,
-.gmail > p::before,
-.address > p::after,
-.address > p::before {
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 27px;
-    background-color: #991b1b;
-    top: 0px;
-    right: -3px;
+
+.gmail>p::after,
+.gmail>p::before,
+.address>p::after,
+.address>p::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 27px;
+  background-color: #991b1b;
+  top: 0px;
+  right: -3px;
 }
+
 /* end top-header */
 /* banner */
 .banner {
-    background-image: url(../images/banner.png);
-    height: 85vh;
-    background-size: cover;
+  background-image: url(../images/banner.png);
+  height: 800px;
+  background-size: cover;
 }
+
 /* banner */
-.nav-link{color: #FFFFFF !important; font-family: 'Kodchasan', sans-serif;}
+.nav-link {
+  color: #FFFFFF !important;
+  font-family: 'Kodchasan', sans-serif;
+}
+
 .advantage_kt {
   text-align: center;
   color: #DC2626;
@@ -90,6 +106,7 @@ body {
   font-weight: bold;
   padding-top: 20px;
 }
+
 .advantage_title {
   text-align: center;
   color: #DC2626;
@@ -97,24 +114,27 @@ body {
   font-size: 28px;
   font-style: normal;
 }
-.advantage_reason{
+
+.advantage_reason {
   text-align: center;
   padding-top: 40px;
   font-size: 14px;
   font-family: 'Kodchasan', sans-serif;
 }
 
-.visao{
+.visao {
   text-align: center;
 }
-.icon_advantage{
+
+.icon_advantage {
   border-radius: 50%;
   background: #1265F3;
   width: 100px;
   height: 100px;
   margin-left: 35%;
 }
-.service_gt{
+
+.service_gt {
   text-align: center;
   color: #DC2626;
   font-family: 'Kodchasan', sans-serif;
@@ -122,38 +142,45 @@ body {
   font-weight: bold;
   padding-top: 26px;
 }
-.service_tt{
+
+.service_tt {
   text-align: center;
   color: #DC2626;
   font-family: 'Kodchasan', sans-serif;
   font-size: 28px;
   font-style: normal;
 }
-.service_product{
-  width: 408px; 
-  height: 500px; 
+
+.service_product {
+  width: 408px;
+  height: 500px;
   border: 2px solid silver;
 }
-.service_item{
+
+.service_item {
   padding-top: 20px;
   padding-left: 25%;
 }
-.service_image{
+
+.service_image {
   text-align: center;
   padding-top: 6px;
 }
-.service_title{
+
+.service_title {
   padding-top: 10px;
   text-align: center;
   font-family: 'Kodchasan', sans-serif;
   font-size: 20px;
 }
-.service_describe{
+
+.service_describe {
   text-align: center;
   font-family: 'Kodchasan', sans-serif;
   color: #DC2626;
 }
-.service_information{
+
+.service_information {
   font-family: 'Kodchasan', sans-serif;
   font-size: 16px;
   border-radius: 0%;
@@ -163,10 +190,12 @@ body {
   height: 34px;
   padding-top: 6px;
 }
-.service_rating{
+
+.service_rating {
   text-align: center;
   padding-top: 10px;
 }
+
 #myButton {
   position: relative;
   background: none;
@@ -183,7 +212,8 @@ body {
   background-color: #DC2626;
 }
 
-#red, #white {
+#red,
+#white {
   position: absolute;
   top: 55%;
   left: 85%;
@@ -200,73 +230,89 @@ body {
   opacity: 1;
 }
 
-.button{
+.button {
   padding-top: 10px;
   text-align: center;
 }
-.button_icon{
+
+.button_icon {
   position: relative;
-  width: 200px; 
+  width: 200px;
   height: 200px;
   overflow: hidden;
 }
-.service_button{
+
+.service_button {
   padding-top: 20px;
 }
-.about-us{
-  font-family: 'Kodchasan', sans-serif; 
+
+.about-us {
+  font-family: 'Kodchasan', sans-serif;
 }
+
 .title {
   font-weight: bold;
   color: #DC2626;
 }
-.text{
+
+.text {
   padding-bottom: 16px;
 }
-.imageContain {position: relative;}
-.bottom-left{
-bottom: 1px;
-left: 12px;
-position: absolute;
-background-color: #1265F3B2;
-color: #FFFFFF;
-border-radius: 0px 0px 0px 5px;
+
+.imageContain {
+  position: relative;
 }
-.Vehicle_lines_describe{
+
+.bottom-left {
+  bottom: 1px;
+  left: 12px;
+  position: absolute;
+  background-color: #1265F3B2;
+  color: #FFFFFF;
+  border-radius: 0px 0px 0px 5px;
+}
+
+.Vehicle_lines_describe {
   padding-top: 20px;
   text-align: center;
   font-family: 'Kodchasan', sans-serif;
   font-size: 16px;
   font-style: normal;
 }
-.Vehicle_lines_title{
+
+.Vehicle_lines_title {
   padding-top: 10px;
   text-align: center;
   font-family: 'Kodchasan', sans-serif;
   font-size: 28px;
   color: #DC2626;
 }
-.trapezoid {
-  position: absolute;
-  top: 168px;
-  left: 238px;
-  width: 200px;
-  height: 0;
-  border-bottom: 52px solid rgba(153, 27, 27, 0.8); ;
-  margin-left: 50px;
-  clip-path: polygon(0 0, 69% 0, 100% 100%, 0% 100%);
-}
-.container {
+
+.Vehicle_lines_car .col-md-3{
   position: relative;
 }
-.Vehicle_lines_car_title{
+
+.trapezoid {
+  position: absolute;
+  left: 12px;
+  width: 200px;
+  bottom:0px;
+  height: 0;
+  border-bottom: 52px solid rgba(153, 27, 27, 0.8);
+  clip-path: polygon(0 0, 69% 0, 100% 100%, 0% 100%);
+  border-radius: 0px 0px 0px 5px;
+}
+
+
+.Vehicle_lines_car_title {
   font-family: 'Kodchasan', sans-serif;
   color: #FFFFFF;
   font-size: 13px;
   padding-top: 15px;
   padding-left: 10px;
 }
-.Vehicle_lines_button{
+
+.Vehicle_lines_button {
   text-align: center;
   border-radius: 1px;
   background: linear-gradient(90deg, #991B1B 0%, #DC2626 50.41%, #991B1B 100%);
@@ -277,120 +323,193 @@ border-radius: 0px 0px 0px 5px;
   flex-direction: row;
   align-items: center;
 }
-.bookingProcess .container{
-  border-radius: 100px; 
+
+.bookingProcess .container {
+  border-radius: 100px;
   border-width: 1px;
-  height: 150px; 
+  height: 150px;
   border-style: solid;
-   border-color: #FFFFFF; 
-   margin-top: 50px; 
-   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-   font-family: 'Kodchasan', sans-serif;
-   margin-bottom: 45px;
+  border-color: #FFFFFF;
+  margin-top: 50px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Kodchasan', sans-serif;
+  margin-bottom: 45px;
 }
+
 .half-top {
   padding-top: 35px;
-color: #FFFFFF;
-font-family: 'Kodchasan', sans-serif;
+  color: #FFFFFF;
+  font-family: 'Kodchasan', sans-serif;
 }
-.text h2{
+
+.text h2 {
   text-transform: uppercase;
 }
-.border-outside{
+
+.border-outside {
   border-width: 1px;
-  border-style: solid; 
-  border-radius: 10px; 
+  border-style: solid;
+  border-radius: 10px;
   border-color: #FFFFFF;
   width: 705px;
-  height: 122px; 
-  top:10px; 
+  height: 122px;
+  top: 10px;
   left: 10px;
-  padding: 12px; 
+  padding: 12px;
   position: relative;
 }
-.half-top .background{
+
+.half-top .background {
   font-family: 'Kodchasan', sans-serif;
   text-transform: uppercase;
 }
-.border-inside{
-  background-color: #FFFFFFB2; 
-  width: 680px; 
-  height: 98px; 
+
+.border-inside {
+  background-color: #FFFFFFB2;
+  width: 680px;
+  height: 98px;
   border-radius: 10px;
 }
-.border-inside p{
-  color: #000000; 
-  top: 21px; 
-  left: 34px; 
-  position: absolute; 
-  font-size: 16px; 
+
+.border-inside p {
+  color: #000000;
+  top: 21px;
+  left: 34px;
+  position: absolute;
+  font-size: 16px;
   font-weight: bold;
 }
-.border-inside h1{
-  bottom:7px; 
-  right:113px; 
+
+.border-inside h1 {
+  bottom: 7px;
+  right: 113px;
   position: absolute;
-   color: #DC2626; 
-   font-weight: bold;
+  color: #DC2626;
+  font-weight: bold;
 }
-.half-bottom{
+
+.half-bottom {
   font-family: 'Kodchasan', sans-serif;
   padding-top: 20px;
 }
-.half-bottom h2{
+
+.half-bottom h2 {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.half-bottom .col-5 p {
-  background-color: #FFFFFF; 
+
+.half-bottom .col-5 #button {
+  background-color: #FFFFFF;
   border-radius: 10px;
+  border-width: 0px;
   width: 180px;
-  height: 49px; 
-  padding: 12px 30px; 
-  color:#DC2626; 
-  font-weight: bold; 
+  height: 49px;
+  padding: 12px 30px;
+  color: #DC2626;
+  font-weight: bold;
   font-size: 16px;
-  margin-left: 93px; 
+  margin-left: 93px;
   margin-top: 20px;
 }
-.half-bottom .col-4 p{
-  background-color: #FFFFFF; 
+
+.half-bottom .col-4 #button {
+  background-color: #FFFFFF;
   border-radius: 10px;
   width: 255px;
-  height: 49px; 
-  padding: 12px 30px; 
+  border-width: 0px;
+  height: 49px;
+  padding: 12px 30px;
   color: #DC2626;
   font-weight: bold;
   font-size: 16px;
-  margin-left: 45px; 
+  margin-left: 45px;
   margin-top: 20px;
 }
-.half-bottom .col-3 p{
-  background-color: #FFFFFF; 
+
+.half-bottom .col-3 #button {
+  background-color: #FFFFFF;
   border-radius: 10px;
   width: 253px;
-  height: 49px; 
-  padding: 12px 30px; 
+  border-width: 0px;
+  height: 49px;
+  padding: 12px 30px;
   color: #DC2626;
   font-weight: bold;
   font-size: 16px;
-  margin-left: 5px; 
+  margin-left: 5px;
   margin-top: 20px;
 }
-.Evaluate_title{
+
+.Evaluate_title {
   padding-top: 20px;
   font-size: 16px;
   font-weight: bold;
   font-family: 'Kodchasan', sans-serif;
   padding-left: 290px;
 }
-.Evaluate_description{
+
+.Evaluate_description {
   padding-top: 10px;
   font-size: 28px;
   font-weight: bold;
   font-family: 'Kodchasan', sans-serif;
   padding-left: 290px;
   color: #DC2626;
+}
+
+footer {
+  font-family: 'Kodchasan', sans-serif;
+}
+
+.top {
+  height: 420px;
+  color: #FFFFFF;
+  background-color: #1265f3;
+  margin-top: 34px;
+  padding-top: 55px;
+}
+
+.top h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 34px;
+}
+
+.top p {
+  font-size: 15px;
+}
+
+.iconfb {
+  width: 30px;
+  height: 30px;
+  background-color: #FFFFFF;
+  color: #DC2626;
+  border-radius: 50px;
+  padding: 3px 9.91px;
+  margin-right: 10px;
+}
+
+.iconMess {
+  width: 30px;
+  height: 30px;
+  background-color: #FFFFFF;
+  color: #DC2626;
+  border-radius: 50px;
+  padding: 1px 5px;
+  margin-right: 10px;
+}
+.iconyt {
+  width: 30px;
+  height: 30px;
+  background-color: #FFFFFF;
+  color: #DC2626;
+  border-radius: 50px;
+  padding: 3px 6.5px;
+  margin-right: 10px;
+}
+footer .bottom{
+  height: 25px;
+  margin-top: 8px;
 }
 .Quote_title{
   font-family: 'Kodchasan', sans-serif;
@@ -478,4 +597,22 @@ input[type=learn_about_button] {
   text-align: center;
   right: 0px;
   font-weight: bold;
+}
+
+.image{
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  position: relative;
+}
+
+.image img{
+  width: 100%;
+  transform: scale(1);
+  transition: all 0.5s;
+}
+
+.image:hover img{
+  transform: scale(1.2);
 }
