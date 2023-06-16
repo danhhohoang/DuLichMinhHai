@@ -99,6 +99,10 @@ body {
 .nav-link {
   color: #FFFFFF !important;
   font-family: 'Kodchasan', sans-serif;
+  font-weight: bold !important;
+}
+li{
+  width: 145px;
 }
 
 .advantage_kt {
@@ -369,6 +373,9 @@ body {
   font-family: 'Kodchasan', sans-serif;
   margin-bottom: 45px;
 }
+/* .bookingProcess .col-xl-3{
+  width: 315px;
+} */
 
 .half-top {
   padding-top: 35px;
@@ -590,21 +597,21 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #DC2626;
-  color: white;
+  background-color:white ;
+  color: #DC2626;
   border-radius: 5px;
   width: 67px;
   height: 40px;
   font-family: 'Kodchasan', sans-serif;
   right: 0px;
   font-weight: bold;
+  border-color: #DC2626;
 }
 
 input[type=submit]:hover {
-  background-color: #ffffff;
-  color: #DC2626;
+  background-color: #DC2626;
+  color:#ffffff ;
   border-radius: 5px;
-  border-color: #DC2626;
   width: 67px;
   height: 40px;
 }
