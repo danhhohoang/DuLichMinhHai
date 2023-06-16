@@ -52,9 +52,9 @@ body {
   padding: 5px 10px;
 }
 
-.header {
+/* .header {
   padding-left: 80px;
-}
+} */
 
 /* top-header */
 .top-header {
@@ -290,8 +290,11 @@ body {
   color: #DC2626;
 }
 
-.Vehicle_lines_car .col-md-3{
+.Vehicle_lines_car .col-xl-3{
   position: relative;
+}
+.Vehicle_lines_car img{
+  width: 100%;
 }
 
 .trapezoid {
@@ -398,6 +401,24 @@ body {
 .half-bottom h2 {
   text-transform: uppercase;
   color: #FFFFFF;
+}
+.half-bottom #button {
+  margin-bottom: 30px;
+}
+.half-bottom .col-xl-5 #button:hover {
+  background-color: #DC2626;
+  color: #FFFFFF;
+  transition: all 0.5s;
+}
+.half-bottom .col-xl-4 #button:hover {
+  background-color: #DC2626;
+  color: #FFFFFF;
+  transition: all 0.5s;
+}
+.half-bottom .col-xl-3 #button:hover {
+  background-color: #DC2626;
+  color: #FFFFFF;
+  transition: all 0.5s;
 }
 
 .half-bottom .col-xl-5 #button {
