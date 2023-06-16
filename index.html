@@ -118,7 +118,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link mx-5" href="#">GIỚI THIỆU</a>
                                 </li>
-                                <li class="nav-item dropdown">                                                  
+                                <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle mx-5"
                                         href="#" id="navbarDropdown"
                                         role="button"
@@ -126,7 +126,7 @@
                                         aria-expanded="false">
                                         DỊCH VỤ
                                     </a>
-                                   
+
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle mx-5"
@@ -177,15 +177,18 @@
                     <!-- The slideshow/carousel -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="Public/images/banner.png" alt="Los Angeles" class="d-block"
+                            <img src="Public/images/banner.png"
+                                alt="Los Angeles" class="d-block"
                                 style="width:100%; height: 800px;">
                         </div>
                         <div class="carousel-item">
-                            <img src="Public/images/Rectangle 15 (1).png" alt="Chicago" class="d-block"
+                            <img src="Public/images/Rectangle 15 (1).png"
+                                alt="Chicago" class="d-block"
                                 style="width:100%; height: 800px;">
                         </div>
                         <div class="carousel-item">
-                            <img src="Public/images/Rectangle 15 (2).png" alt="New York" class="d-block"
+                            <img src="Public/images/Rectangle 15 (2).png"
+                                alt="New York" class="d-block"
                                 style="width:100%; height: 800px;">
                         </div>
                     </div>
@@ -625,19 +628,6 @@
             </div>
             <!-- Giới thiệu-->
             <!-- Các dòng xe -->
-            <!-- <figure class="card card--1" style="--image-src: url('https://source.unsplash.com/78A265wPiO4')">
-            <figcaption>
-                <span class="info">
-                    <h3>The Hills</h3>
-                    <span>by David Marcu</span>
-                </span>
-                <span class="links">
-                    <a href="#"><i class="fas fa-heart"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://unsplash.com/photos/78A265wPiO4" target="_blank"><i class="fas fa-share"></i></a>
-                </span>
-            </figcaption>
-        </figure> -->
             <div class="Vehicle_lines">
                 <div class="Vehicle_lines_describe">
                     <b style="color: #B91C1C;">//</b>
@@ -763,7 +753,7 @@
                     </div>
                 </div>
                 <div style="padding-left: 45%; padding-top: 20px;">
-                    <div class="Vehicle_lines_button">
+                    <button class="Vehicle_lines_button">                    
                         <a>XEM THÊM</a>
                     </div>
                 </div>
@@ -861,7 +851,6 @@
             </div>
             <!-- Ưu đãi -->
             <!-- Khách hàng tin dùng -->
-            <script src="web.js"></script>
             <div class="Evaluate">
                 <div class="Evaluate_car">
                     <div class="container">
@@ -992,9 +981,10 @@
                                             style="position: absolute;">
                                     </form>
                                 </div>
-                                <div class="col-6">
-                                    <form action="Fill_in_the_information">
-                                        <input type="reload" value="Nhập lại">
+                                <div class="col-6">                     
+                                    <form action="Fill_in_the_information"
+                                        style="position: relative;">
+                                        <input type="reload" value="Nhập lại" readonly>
                                     </form>
                                 </div>
 
@@ -1020,7 +1010,7 @@
                                 <div class="col-md-6">
                                     <img src="Public/images/Rectangle 37.png"
                                         style="padding-top: 10px; background-size: cover;
-                  height: 154px; border-radius: 5px;" srcset>
+                                            height: 154px; border-radius: 5px;" srcset>
                                     <div class="Blog_description_title">
                                         <b
                                             style="font-size: 18px; font-weight: bold;">
@@ -1041,8 +1031,11 @@
                                             </a>
                                         </div>
                                         <div style="padding-top: 10px;">
-                                            <input type="learn_about_button"
+                                            <form action="Fill_in_the_information"
+                                            style="position: relative;">
+                                                 <input type="learn_about_button"
                                                 value="Tìm hiểu ngay">
+                                            </form>                                      
                                         </div>
                                     </div>
                                 </div>
@@ -1063,8 +1056,11 @@
                                             </a>
                                         </div>
                                         <div style="padding-top: 10px;">
-                                            <input type="learn_about"
+                                            <form action="Fill_in_the_information"
+                                            style="position: relative;">
+                                                 <input type="learn_about"
                                                 value="Tìm hiểu ngay">
+                                            </form>
                                         </div>
                                     </div>
                                     <div class="Blog_description_title">
@@ -1101,19 +1097,26 @@
                     <div class="row">
                         <div class="col-xl-3 col-md-6">
                             <h5 style="padding-left: 35px;">Du lịch minh hải</h5>
-                            <p>
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <form action="Fill_in_the_information" style="position: relative;">
+                                <p class="underline-on-hover">
+                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                                 Địa chỉ: Số 5, đường 45, Khu Phố 3, P.An
                                 Phú, Q.2, TP.Thủ Đức, HCM
-                            </p>
-                            <p>
+                                </p>
+                            </form>
+                            <form action="Fill_in_the_information" style="position: relative;">
+                                <p class="underline-on-hover">
                                 <i class="fa fa-phone" aria-hidden="true"></i>
                                 Hotline: 0933.279.942 - 0906.401.332
                             </p>
-                            <p>
+                            </form>
+                           
+                            <form action="Fill_in_the_information" style="position: relative;">
+                                <p class="underline-on-hover">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
                                 Email: xedulichminhhai@gmail.com
-                            </p>
+                                </p>
+                            </form>
                             <p>
                                 <i class="fa fa-clock-o" aria-hidden="true"></i>
                                 Giờ làm việc: 05:00am - 23:00pm
@@ -1121,17 +1124,33 @@
                         </div>
                         <div class="col-xl-3 col-md-6">
                             <h5>Chính sách</h5>
-                            <p>> Thanh toán</p>
-                            <p>> Đặt & hủy hoàn tiền</p>
-                            <p>> Câu hỏi thường gặp</p>
-                            <p>> Chăm sóc khách hàng</p>
+                            <form action="Fill_in_the_information" style="position: relative;">
+                                <p class="underline-on-hover"> > Thanh toán</p>
+                            </form>
+                            <form action="Fill_in_the_information" style="position: relative;">
+                                <p class="underline-on-hover">> Đặt & hủy hoàn tiền</p>
+                            </form>
+                            <form action="Fill_in_the_information" style="position: relative;">
+                                <p class="underline-on-hover">> Câu hỏi thường gặp</p>
+                            </form>
+                            <form action="Fill_in_the_information" style="position: relative;">
+                                <p class="underline-on-hover">> Chăm sóc khách hàng</p>
+                            </form>
                         </div>
                         <div class="col-xl-3 col-md-6">
                             <h5>Liên kết nhanh</h5>
-                            <p>> Trang chủ</p>
-                            <p>> Giới thiệu</p>
-                            <p>> Dịch vụ thuê xe</p>
-                            <p>> Liên hệ</p>
+                            <form action="Fill_in_the_information" style="position: relative;">
+                                <p class="underline-on-hover">> Trang chủ</p>
+                            </form>
+                            <form action="Fill_in_the_information" style="position: relative;">
+                                <p class="underline-on-hover">> Giới thiệu</p>
+                            </form>
+                            <form action="Fill_in_the_information" style="position: relative;">
+                                <p class="underline-on-hover">> Dịch vụ thuê xe</p>
+                            </form>
+                            <form action="Fill_in_the_information" style="position: relative;">
+                                <p class="underline-on-hover">> Liên hệ</p>
+                            </form>
                         </div>
                         <div class="col-xl-3 col-md-6"
                             style="position: relative;">
