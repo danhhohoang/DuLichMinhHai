@@ -320,7 +320,7 @@ body {
   background: linear-gradient(90deg, #991B1B 0%, #DC2626 50.41%, #991B1B 100%);
   color: #eef7ff;
   width: 151px;
-  height: 41px;
+  height: 39px;
   padding-top: 7px;
   flex-direction: row;
   align-items: center;
@@ -541,7 +541,6 @@ input[type=text], select, textarea {
 input[type=submit] {
   background-color: #DC2626;
   color: white;
-  border: none;
   border-radius: 5px;
   width: 67px;
   height: 40px;
@@ -551,7 +550,16 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #ffffff;
+  color: #DC2626;
+  border-radius: 5px;
+  border-color: #DC2626;
+  width: 67px;
+  height: 40px;
+}
+input[type=reload]:hover {
+  background-color: #DC2626;
+  color: #FEF2F2;
 }
 input[type=reload] {
   color: #DC2626;
@@ -563,6 +571,7 @@ input[type=reload] {
   text-align: center;
   right: 0px;
   font-weight: bold;
+  cursor: pointer;
 }
 .Quote_information{
   font-size: 16px;
@@ -588,20 +597,29 @@ input[type=learn_about] {
   text-align: center;
   right: 0px;
   font-weight: bold;
+  cursor: pointer;
+}
+input[type= learn_about]:hover {
+  background-color:#1265F3 ;
+  color: #eef7ff;
 }
 input[type=learn_about_button] {
   color: #FFFFFF;
   background-color: #1265F3;
   border-radius: 5px;
-  border: none;
+  border-color: #1265F3;
   width: 150px;
   height: 40px;
   font-family: 'Kodchasan', sans-serif;
   text-align: center;
   right: 0px;
   font-weight: bold;
+  cursor: pointer;
 }
-
+input[type= learn_about_button]:hover {
+  background-color: #eef7ff;
+  color: #1265F3;
+}
 .image{
   overflow: hidden;
   cursor: pointer;
@@ -712,4 +730,12 @@ input[type=learn_about_button] {
 .wrapper .youtube:hover .tooltip::before {
   background: #CD201F;
   color: #ffffff;
+}
+.underline-on-hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.underline-on-hover:hover {
+  text-decoration: underline;
 }
