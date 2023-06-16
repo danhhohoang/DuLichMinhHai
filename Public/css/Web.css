@@ -18,6 +18,8 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
+  padding-top: 18px;
+  padding-left: 70px;
 }
 
 .search-container {
@@ -72,17 +74,18 @@ body {
 }
 
 .gmail>p::after,
-.gmail>p::before,
-.address>p::after,
-.address>p::before {
-  content: '';
-  position: absolute;
-  width: 1px;
-  height: 27px;
-  background-color: #991b1b;
-  top: 0px;
-  right: -3px;
-}
+  .gmail>p::before,
+  .address>p::after,
+  .address>p::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    background-color: #991b1b;
+    top: 0px;
+    bottom: 0px;
+    right: -3px;
+  }
 
 /* end top-header */
 /* banner */
@@ -131,7 +134,7 @@ body {
   background: #1265F3;
   width: 100px;
   height: 100px;
-  margin-left: 35%;
+  justify-content: center;
 }
 
 .service_gt {
@@ -155,6 +158,8 @@ body {
   width: 408px;
   height: 500px;
   border: 2px solid silver;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .service_item {
@@ -296,7 +301,21 @@ body {
 .Vehicle_lines_car img{
   width: 100%;
 }
-
+.image-container {
+  position: relative;
+  perspective: 1000px;
+  transition: transform 1s;
+}
+.image-container:hover .trapezoid {
+  opacity: 1;
+}
+.image-container:hover img {
+  transform: rotateY(360deg);
+}                                 
+.image-container img {
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
 .trapezoid {
   position: absolute;
   left: 12px;
@@ -306,8 +325,17 @@ body {
   border-bottom: 52px solid rgba(153, 27, 27, 0.8);
   clip-path: polygon(0 0, 69% 0, 100% 100%, 0% 100%);
   border-radius: 0px 0px 0px 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
-
+.trapezoid:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 100px solid transparent;
+  width: 100%;
+}
 
 .Vehicle_lines_car_title {
   font-family: 'Kodchasan', sans-serif;
@@ -315,6 +343,7 @@ body {
   font-size: 13px;
   padding-top: 15px;
   padding-left: 10px;
+  position: absolute;
 }
 
 .Vehicle_lines_button {
@@ -642,6 +671,19 @@ input[type= learn_about_button]:hover {
   background-color: #eef7ff;
   color: #1265F3;
 }
+input[type= learn_button] {
+  color: #FFFFFF;
+  background: linear-gradient(90deg, #991B1B 0%, #DC2626 50.41%, #991B1B 100%);
+  width: 150px;
+  height: 40px;
+  border: none;
+  font-family: 'Kodchasan', sans-serif;
+  text-align: center;
+  right: 0px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
 .image{
   overflow: hidden;
   cursor: pointer;
@@ -761,3 +803,68 @@ input[type= learn_about_button]:hover {
 .underline-on-hover:hover {
   text-decoration: underline;
 }
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 250px;  
+  overflow: hidden;
+}
+
+.slideshow-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slideshow-image.active {
+  opacity: 1;
+}
+
+.slideshow-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.column-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.colum {
+  width: 408px;
+  height: 550px;
+  animation: slide 15s infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33.33% {
+    transform: translateX(-100%);
+  }
+  66.66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
