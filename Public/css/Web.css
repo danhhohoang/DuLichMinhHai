@@ -290,8 +290,11 @@ body {
   color: #DC2626;
 }
 
-.Vehicle_lines_car .col-md-3{
+.Vehicle_lines_car .col-xl-3{
   position: relative;
+}
+.Vehicle_lines_car img{
+  width: 100%;
 }
 
 .trapezoid {
@@ -440,6 +443,25 @@ body {
   font-size: 16px;
   /* margin-left: 5px; */
   margin-top: 20px;
+}
+
+.half-bottom #button {
+  margin-bottom: 30px;
+}
+.half-bottom .col-xl-5 #button:hover {
+  background-color: #DC2626;
+  color: #FFFFFF;
+  transition: all 0.5s;
+}
+.half-bottom .col-xl-4 #button:hover {
+  background-color: #DC2626;
+  color: #FFFFFF;
+  transition: all 0.5s;
+}
+.half-bottom .col-xl-3 #button:hover {
+  background-color: #DC2626;
+  color: #FFFFFF;
+  transition: all 0.5s;
 }
 
 .Evaluate_title {
